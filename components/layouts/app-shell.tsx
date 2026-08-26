@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { cn } from '@/lib/utils'
 import { PanelLeft } from 'lucide-react'
 import { Button } from '@/components/ui/button'
+import { Footer } from '@/components/layouts/footer'
 
 export function AppShell({
   sidebar,
@@ -59,6 +60,9 @@ export function AppShell({
         <main className={cn('p-4 sm:p-6 lg:p-8', className)}>
           {children}
         </main>
+
+        {/* Footer */}
+        <Footer />
       </div>
     </div>
   )

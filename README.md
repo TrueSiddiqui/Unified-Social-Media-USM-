@@ -94,3 +94,17 @@ In short:
 > Note: This license is a custom, source-available non-commercial license, not an OSI-approved open-source license. It is provided as-is and is not legal advice; consult a lawyer for enforceability in your jurisdiction.
 
 For commercial licensing inquiries or contributor agreements, please contact TrueSiddiqui.
+
+## Trademarks & Attributions
+
+This project is an **independent, unofficial** tool and is **not affiliated with, endorsed by, or sponsored by** any of the social media platforms it integrates with. All product names, logos, and brands are the property of their respective owners, used here for identification and interoperability purposes only.
+
+| Platform | Owner |
+|--------------------|------------------------------------------------|
+| Facebook, Instagram, Threads | Meta Platforms, Inc. |
+| X (Twitter) | X Corp. |
+| LinkedIn | LinkedIn Corporation (a Microsoft subsidiary) |
+| YouTube | Google LLC (a subsidiary of Alphabet Inc.) |
+| TikTok | ByteDance Ltd. |
+
+See [TRADEMARKS.md](./TRADEMARKS.md) for full attributions and details.

@@ -108,3 +108,22 @@ This project is an **independent, unofficial** tool and is **not affiliated with
 | TikTok | ByteDance Ltd. |
 
 See [TRADEMARKS.md](./TRADEMARKS.md) for full attributions and details.
+
+## Platform API Compliance
+
+USM is fully compliant with all integrated platform developer policies and terms of service:
+
+- ✅ **Privacy Policy** and **Terms of Service** - Publicly accessible at `/privacy` and `/terms`
+- ✅ **Data Deletion** - Users can request deletion via `/api/data-deletion` or account settings
+- ✅ **Secure Storage** - OAuth tokens encrypted with AES-256-GCM, passwords hashed with bcrypt
+- ✅ **User Consent** - Clear disclosure before OAuth authorization
+- ✅ **No Data Selling** - We never sell, rent, or license user data
+- ✅ **No AI Training** - User data is not used to train AI/ML models
+- ✅ **Platform-Specific Compliance**:
+  - **Meta (Facebook/Instagram/Threads):** Meta Platform Terms & Developer Policies
+  - **X (Twitter):** X Developer Agreement, no iframe embedding, no AI training
+  - **LinkedIn:** API Terms of Use, 24-48hr data retention limits
+  - **YouTube:** Google API User Data Policy, Limited Use compliance
+  - **TikTok:** Developer Terms, secure storage, privacy disclosure
+
+See [COMPLIANCE.md](./COMPLIANCE.md) for detailed compliance documentation and developer guidelines.

@@ -1,0 +1,179 @@
+Unified Social Media (USM) — Source-Available Non-Commercial License
+Version 1.1
+
+Copyright (c) 2026 TrueSiddiqui. All rights reserved.
+
+TrueSiddiqui is the sole and exclusive owner of the Software and this project.
+This License grants limited rights to use and contribute; it does NOT transfer
+ownership of the project to anyone, under any circumstances.
+
+
+1. DEFINITIONS
+
+   "Software" means the source code, documentation, assets, design, name,
+   branding, and any other material contained in this repository, together
+   with the project as a whole (the "Project").
+
+   "Licensor" means TrueSiddiqui, the sole copyright holder and owner of the
+   Software and the Project.
+
+   "You" (or "Your") means any individual or legal entity exercising rights
+   under this License.
+
+   "Contributor" means any person or entity that submits, uploads, or
+   otherwise provides any contribution (code, assets, documentation, or other
+   material) to the Software or any Derivative Work.
+
+   "Commercial Use" means any use of the Software, in whole or in part, that
+   is primarily intended for or directed toward commercial advantage or
+   monetary or other compensation. This includes, without limitation: selling
+   the Software or Derivative Works; offering the Software or Derivative Works
+   as a paid product or paid/hosted service (including SaaS); using the
+   Software to generate advertising, subscription, licensing, donation,
+   sponsorship, or transaction revenue; charging for access, support, or
+   features; or bundling the Software into any paid or revenue-generating
+   offering.
+
+   "Derivative Work" means any work that is based upon, modifies, extends,
+   adapts, translates, forks, or is derived from the Software.
+
+   "Revenue" means any gross money or other consideration of value actually
+   received by the Licensor that is directly attributable to the Commercial
+   Use of the Software or the operation of the Project as a commercial
+   platform.
+
+
+2. GRANT OF RIGHTS (NON-COMMERCIAL)
+
+   Subject to the terms and conditions of this License, the Licensor hereby
+   grants You a worldwide, royalty-free, non-exclusive, non-transferable,
+   revocable license to:
+
+   (a) use, run, and study the Software for personal, educational, research,
+       or other non-commercial purposes;
+
+   (b) reproduce and copy the Software;
+
+   (c) modify the Software and create Derivative Works; and
+
+   (d) distribute the Software and Derivative Works, provided that such
+       distribution is non-commercial and complies with Section 4.
+
+   You are encouraged to build upon and expand the Software under these terms.
+   This grant is a license only. It conveys no ownership interest of any kind.
+
+
+3. COMMERCIAL USE RESERVED EXCLUSIVELY TO THE LICENSOR
+
+   3.1  All rights to Commercial Use of the Software, the Project, and any
+        Derivative Work are reserved exclusively and perpetually to the
+        Licensor (TrueSiddiqui).
+
+   3.2  No person or entity other than the Licensor may earn, collect,
+        receive, or otherwise derive any revenue, profit, or monetary or
+        commercial benefit from the Software, the Project, or any Derivative
+        Work, whether directly or indirectly, without a separate prior written
+        commercial license signed by the Licensor.
+
+   3.3  The exclusive commercial rights in this Section cannot be waived,
+        transferred, sublicensed, or granted by anyone other than the
+        Licensor. No act, omission, distribution, or contribution by any party
+        shall diminish, share, or transfer these rights.
+
+
+4. CONDITIONS
+
+   (a) All copies, substantial portions, and Derivative Works of the Software
+       must retain this License, the above copyright and ownership notice, and
+       this permission notice, without modification.
+
+   (b) You must clearly indicate any changes You made to the Software, and You
+       may not remove, obscure, or alter any attribution to the Licensor.
+
+   (c) You may not sublicense the Software in any manner that grants Commercial
+       Use rights to any party.
+
+   (d) You may not use the Project name, "USM", "Unified Social Media", or the
+       Licensor's name or branding to imply endorsement of, or ownership over,
+       any Derivative Work.
+
+
+5. CONTRIBUTIONS AND CONTRIBUTOR COMPENSATION
+
+   5.1  Assignment. By submitting a contribution, each Contributor irrevocably
+        assigns to the Licensor all right, title, and interest (including all
+        copyright and commercial rights) in and to that contribution, and
+        grants the Licensor a perpetual, worldwide, royalty-free right to use
+        it for any purpose, including Commercial Use. This ensures the Project
+        remains solely owned by the Licensor.
+
+   5.2  No Ownership by Contribution. Making a contribution does NOT grant a
+        Contributor any ownership of, or commercial claim to, the Software or
+        the Project. Contributions are voluntary.
+
+   5.3  Contributor Compensation (Good-Faith Commitment). If and when the
+        Licensor or the Project begins generating Revenue, the Licensor
+        intends, in good faith, to fairly compensate Contributors and
+        developers who materially contributed to the Project, in a manner and
+        amount determined by the Licensor based on the nature and significance
+        of each contribution. Any such compensation is payable only:
+          (i)  after the Project or the Licensor actually receives Revenue; and
+          (ii) pursuant to a separate written agreement between the Licensor
+               and the Contributor.
+        This Section does not entitle any Contributor to Revenue before such a
+        written agreement is executed, and does not transfer any ownership or
+        commercial rights, which remain exclusively with the Licensor per
+        Section 3.
+
+
+6. NO OWNERSHIP CLAIM / ANTI-CIRCUMVENTION (NO LOOPHOLES)
+
+   6.1  Sole Ownership. The Licensor is and remains the sole owner of the
+        Software and the Project. Nothing in this License, and no use,
+        contribution, fork, distribution, hosting, or promotion by any party,
+        shall be construed to grant that party ownership of, or any commercial
+        or proprietary claim to, the Software or the Project.
+
+   6.2  No Adverse Claims. You shall not claim ownership of the Project, register
+        or attempt to register any copyright, trademark, patent, domain, company,
+        or other right in the Project name or Software in a way that competes
+        with, impairs, or misappropriates the Licensor's rights. Any right so
+        acquired is held in trust for and must be assigned to the Licensor on
+        demand.
+
+   6.3  No Circumvention. Any attempt to circumvent the commercial restrictions
+        of this License — including relicensing, renaming, rebranding,
+        re-implementing, wrapping, or splitting the Software to enable
+        Commercial Use by anyone other than the Licensor — is a material breach
+        and is void.
+
+   6.4  Survival. Sections 3, 5.1, 5.2, 6, 7, 8, and 9 survive termination.
+
+
+7. TERMINATION
+
+   Any violation of this License, including any unauthorized Commercial Use or
+   any ownership claim prohibited by Section 6, automatically and immediately
+   terminates the rights granted to You under Section 2. Upon termination, You
+   must cease all use and distribution of the Software and destroy all copies
+   in Your possession or control. The Licensor's rights and remedies are
+   cumulative.
+
+
+8. DISCLAIMER OF WARRANTY
+
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+   IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+   FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT.
+
+
+9. LIMITATION OF LIABILITY
+
+   IN NO EVENT SHALL THE LICENSOR BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER
+   LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING
+   FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+   DEALINGS IN THE SOFTWARE.
+
+
+For commercial licensing inquiries or contributor agreements, contact the
+Licensor (TrueSiddiqui).

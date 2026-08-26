@@ -80,4 +80,16 @@ scripts/        Seed script
 
 ## License
 
-This project is provided as-is for personal use.
+This project is licensed under the **Unified Social Media (USM) Source-Available Non-Commercial License (v1.1)** — see the [LICENSE](./LICENSE) file for the full terms.
+
+In short:
+
+- ✅ Anyone may use, study, modify, and build upon this project for **non-commercial** purposes.
+- ✅ You may distribute your changes, as long as it stays non-commercial and keeps this license.
+- ❌ **No one may make money** from this project or works derived from it — **all commercial rights are reserved exclusively and perpetually to TrueSiddiqui**.
+- 👤 **Sole ownership:** TrueSiddiqui is the sole owner. Using, forking, or contributing does **not** give anyone ownership or any commercial claim, and no one may claim the project (no loopholes).
+- 🤝 **Contributors:** Contributions are welcome and are assigned to the project owner. If and when the project starts generating revenue, TrueSiddiqui intends in good faith to fairly compensate contributors/developers — payable only after revenue is received and under a separate written agreement.
+
+> Note: This license is a custom, source-available non-commercial license, not an OSI-approved open-source license. It is provided as-is and is not legal advice; consult a lawyer for enforceability in your jurisdiction.
+
+For commercial licensing inquiries or contributor agreements, please contact TrueSiddiqui.

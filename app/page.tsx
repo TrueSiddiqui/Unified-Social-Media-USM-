@@ -3,7 +3,7 @@ import { Button } from '@/components/ui/button'
 import { Container } from '@/components/layouts/container'
 import { Section } from '@/components/layouts/section'
 import { ThemeToggle } from '@/components/theme-toggle'
-import { Zap, Rss, Shield, Layers, ArrowRight } from 'lucide-react'
+import { Zap, Rss, Shield, Layers, ArrowRight, BanIcon, DollarSign, Eye, Scale, SlidersHorizontal } from 'lucide-react'
 import { LandingPlatforms } from '@/components/landing-platforms'
 
 const features = [
@@ -20,7 +20,7 @@ const features = [
   {
     icon: Shield,
     title: 'Secure & Private',
-    description: 'Your tokens are encrypted and your data stays under your control.',
+    description: 'Your tokens are encrypted and your data stays under your control. No ads are ever run.',
   },
 ]
 
@@ -87,6 +87,9 @@ export default function HomePage() {
             <p className="mt-3 text-muted-foreground">Seven platforms. One dashboard. Zero hassle.</p>
           </div>
           <LandingPlatforms />
+          <p className="mt-6 text-center text-sm font-medium text-muted-foreground italic">
+            More Platforms to be Integrated as necessary
+          </p>
         </Container>
       </Section>
 
@@ -106,6 +109,67 @@ export default function HomePage() {
                 </div>
               )
             })}
+          </div>
+        </Container>
+      </Section>
+
+      {/* Transparent Pricing */}
+      <Section>
+        <Container size="lg">
+          <div className="text-center">
+            <h2 className="font-display text-3xl font-bold tracking-tight">Honest, Transparent Pricing</h2>
+            <p className="mt-3 max-w-2xl mx-auto text-muted-foreground">
+              No ads. No tricks. No hidden fees. You pay only for what you actually use.
+            </p>
+          </div>
+
+          <div className="mt-12 rounded-2xl border bg-card p-8 md:p-10 shadow-sm">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary/10">
+                <DollarSign className="h-5 w-5 text-primary" />
+              </div>
+              <h3 className="font-display text-xl font-semibold tracking-tight">Subscription-Based &mdash; Pay Actual Costs</h3>
+            </div>
+            <p className="text-muted-foreground leading-relaxed">
+              Your subscription covers the real, per-user costs charged by backend infrastructure &mdash; hosting,
+              API usage, storage, and bandwidth &mdash; passed through at cost. On top of that, a transparent margin
+              sustains TrueSiddiqui and every developer and contributor who builds this platform. Every number is
+              publicly disclosed so you always know exactly where your money goes.
+            </p>
+          </div>
+
+          <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            <div className="flex flex-col items-center rounded-xl border bg-card p-6 text-center shadow-sm">
+              <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-xl bg-red-500/10">
+                <BanIcon className="h-5 w-5 text-red-500" />
+              </div>
+              <h4 className="font-semibold">No Ads &mdash; Ever</h4>
+              <p className="mt-1.5 text-sm text-muted-foreground">We will never run ads. Your attention is not our product.</p>
+            </div>
+
+            <div className="flex flex-col items-center rounded-xl border bg-card p-6 text-center shadow-sm">
+              <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-xl bg-green-500/10">
+                <Eye className="h-5 w-5 text-green-500" />
+              </div>
+              <h4 className="font-semibold">Full Transparency</h4>
+              <p className="mt-1.5 text-sm text-muted-foreground">All costs and margins are publicly disclosed. Nothing is hidden from you.</p>
+            </div>
+
+            <div className="flex flex-col items-center rounded-xl border bg-card p-6 text-center shadow-sm">
+              <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-xl bg-blue-500/10">
+                <Scale className="h-5 w-5 text-blue-500" />
+              </div>
+              <h4 className="font-semibold">Fair to Everyone</h4>
+              <p className="mt-1.5 text-sm text-muted-foreground">No tricks, no dark patterns, no unfair practices. We treat every user equally.</p>
+            </div>
+
+            <div className="flex flex-col items-center rounded-xl border bg-card p-6 text-center shadow-sm">
+              <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-xl bg-purple-500/10">
+                <SlidersHorizontal className="h-5 w-5 text-purple-500" />
+              </div>
+              <h4 className="font-semibold">No Controlled Algorithms</h4>
+              <p className="mt-1.5 text-sm text-muted-foreground">Your feed is yours. No manipulative algorithms deciding what you see.</p>
+            </div>
           </div>
         </Container>
       </Section>

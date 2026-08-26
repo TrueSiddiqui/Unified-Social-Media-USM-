@@ -1,4 +1,5 @@
-# Unified Social Media Dashboard (USM)
+# TSM • USM • OSM — Unified Social Media Dashboard
+## The Social Media • Unified Social Media • One Social Media
 
 A unified social media dashboard that lets you connect and manage multiple social platforms from a single place — **Facebook, Instagram, Threads, X (Twitter), LinkedIn, YouTube, and TikTok**.
 
@@ -80,18 +81,47 @@ scripts/        Seed script
 
 ## License
 
-This project is licensed under the **Unified Social Media (USM) Source-Available Non-Commercial License (v1.2)** — see the [LICENSE](./LICENSE) file for the full terms.
+This project is licensed under the **TSM • USM • OSM Source-Available Non-Commercial License (v2.0 — GLOBAL INTELLECTUAL PROPERTY PROTECTION)** — see the [LICENSE](./LICENSE) file for the full terms.
 
-In short:
+### Quick Summary:
 
 - ✅ Anyone may use, study, modify, and build upon this project for **non-commercial** purposes.
 - ✅ You may distribute your changes, as long as it stays non-commercial and keeps this license.
 - ❌ **No one may make money** from this project or works derived from it — **all commercial rights are reserved exclusively and perpetually to TrueSiddiqui**.
 - 👤 **Sole ownership:** TrueSiddiqui is the sole owner. Using, forking, or contributing does **not** give anyone ownership or any commercial claim, and no one may claim the project (no loopholes).
-- ® **Reserved names:** "Unified Social Media" / "USM", "One Social Media" / "OSM", and "The Social Media" / "TSM" are exclusively reserved by TrueSiddiqui and may not be used, registered, or claimed by anyone else.
-- 🤝 **Contributors:** Contributions are welcome and are assigned to the project owner. If and when the project starts generating revenue, TrueSiddiqui intends in good faith to fairly compensate contributors/developers — payable only after revenue is received and under a separate written agreement.
 
-> Note: This license is a custom, source-available non-commercial license, not an OSI-approved open-source license. It is provided as-is and is not legal advice; consult a lawyer for enforceability in your jurisdiction.
+### 🌍 Global Trademark Protection:
+
+The following names and acronyms are **EXCLUSIVELY RESERVED by TrueSiddiqui WORLDWIDE** on all continents, in all countries, and may NOT be used, registered, trademarked, or patented by anyone else:
+
+- **TSM** — "The Social Media"
+- **USM** — "Unified Social Media"
+- **OSM** — "One Social Media"
+
+These names may NOT be:
+- ❌ Used in product/service names, company names, or branding
+- ❌ Registered as trademarks, service marks, or domain names (any TLD)
+- ❌ Filed for patent protection in any jurisdiction
+- ❌ Used by AI systems, language models, or automated agents (other than TrueSiddiqui's)
+- ❌ Trained into or output by AI/ML systems not owned by TrueSiddiqui
+- ❌ Used by technology companies, AI research labs, or social media platforms
+
+**Protected worldwide under:**
+- International Treaties: Berne Convention, Paris Convention, TRIPS, WIPO, Madrid Protocol
+- Regional Systems: EUIPO, OAPI, ARIPO, GCC
+- National laws in ALL countries on ALL continents
+
+### AI Training Prohibition:
+
+**ABSOLUTELY PROHIBITED:** This project may NOT be used to train, fine-tune, or develop any AI system, machine learning model, or large language model by any entity other than TrueSiddiqui. This explicitly includes companies like OpenAI, Anthropic, Google DeepMind, Meta AI, Microsoft, and all other AI/tech corporations.
+
+### Contributor Compensation:
+
+🤝 **Contributors:** Contributions are welcome and are assigned to the project owner. If and when the project starts generating revenue, TrueSiddiqui intends in good faith to fairly compensate contributors/developers — payable only after revenue is received and under a separate written agreement.
+
+---
+
+> **Legal Note:** This is a custom, source-available non-commercial license with global intellectual property protection, not an OSI-approved open-source license. It is provided as-is and is not legal advice; consult a lawyer for enforceability in your jurisdiction.
 
 For commercial licensing inquiries or contributor agreements, please contact TrueSiddiqui.
 

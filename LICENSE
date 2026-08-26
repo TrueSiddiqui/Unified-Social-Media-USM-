@@ -1,11 +1,14 @@
-Unified Social Media (USM) — Source-Available Non-Commercial License
-Version 1.2
+TSM • USM • OSM — Source-Available Non-Commercial License
+The Social Media • Unified Social Media • One Social Media
+Version 2.0 — GLOBAL INTELLECTUAL PROPERTY PROTECTION
 
-Copyright (c) 2026 TrueSiddiqui. All rights reserved.
+Copyright (c) 2026 TrueSiddiqui. All rights reserved worldwide.
 
-TrueSiddiqui is the sole and exclusive owner of the Software and this project.
+TrueSiddiqui is the sole and exclusive owner of the Software, this project,
+and all associated names, trademarks, service marks, and intellectual property.
 This License grants limited rights to use and contribute; it does NOT transfer
-ownership of the project to anyone, under any circumstances.
+ownership of the project, names, trademarks, or any intellectual property to
+anyone, under any circumstances, in any jurisdiction, on any continent.
 
 
 1. DEFINITIONS
@@ -135,22 +138,50 @@ ownership of the project to anyone, under any circumstances.
         shall be construed to grant that party ownership of, or any commercial
         or proprietary claim to, the Software or the Project.
 
-   6.2  Reserved Names. The following names, acronyms, and any confusingly
-        similar variations are exclusively reserved by the Licensor and may not
-        be used, registered, or claimed by anyone other than the Licensor:
-          - "Unified Social Media" and "USM"
-          - "One Social Media" and "OSM"
-          - "The Social Media" and "TSM"
-        These names may not be used as, or incorporated into, any product name,
-        service name, company name, domain, trademark, trade name, or branding
-        by anyone other than the Licensor.
+   6.2  GLOBAL RESERVED NAMES AND TRADEMARKS. The following names, acronyms,
+        service marks, trademarks, and any confusingly similar variations,
+        translations, transliterations, or derivative forms are exclusively
+        reserved by the Licensor WORLDWIDE, in ALL jurisdictions, on ALL
+        continents, in ALL countries, and may not be used, registered, claimed,
+        trademarked, or patented by anyone other than the Licensor:
+        
+        PRIMARY NAMES:
+          • "The Social Media" and the acronym "TSM"
+          • "Unified Social Media" and the acronym "USM"
+          • "One Social Media" and the acronym "OSM"
+        
+        PROHIBITED USES (applies globally):
+        These names, acronyms, and any confusingly similar variations may NOT be:
+          - Used as or incorporated into any product name, service name,
+            company name, business name, trade name, or branding
+          - Registered as trademarks, service marks, or trade names
+          - Filed for patent protection
+          - Registered as domain names (including all TLDs: .com, .net, .org,
+            .io, .ai, .app, .tech, .social, .media, country-code TLDs, etc.)
+          - Used in company registrations, DBAs, or business filings
+          - Used in advertising, marketing, or promotional materials
+          - Claimed as intellectual property in any form
+          - Used by AI systems, language models, or automated agents owned or
+            operated by any entity other than the Licensor
+          - Trained into, referenced by, or output by any AI, machine learning
+            model, or generative system not owned by the Licensor
+          - Used in any manner that competes with, dilutes, or conflicts with
+            the Licensor's rights
+        
+        CONFUSINGLY SIMILAR VARIATIONS ALSO PROHIBITED:
+        This includes but is not limited to: TheSocialMedia, UnifiedSocialMedia,
+        OneSocialMedia, The-Social-Media, Unified-Social-Media, One-Social-Media,
+        SocialMedia-TSM, SocialMedia-USM, SocialMedia-OSM, and any other
+        variation that a reasonable person would consider similar or related.
 
    6.3  No Adverse Claims. You shall not claim ownership of the Project, register
-        or attempt to register any copyright, trademark, patent, domain, company,
-        or other right in the Project name, the Reserved Names (Section 6.2), or
-        Software in a way that competes with, impairs, or misappropriates the
-        Licensor's rights. Any right so acquired is held in trust for and must
-        be assigned to the Licensor on demand.
+        or attempt to register any copyright, trademark, service mark, patent,
+        domain, company name, business name, or other intellectual property right
+        in the Project name, the Reserved Names (Section 6.2), or the Software in
+        any jurisdiction worldwide, in a way that competes with, impairs, dilutes,
+        or misappropriates the Licensor's rights. Any right so acquired is held
+        in trust for and must be immediately assigned to the Licensor on demand,
+        without compensation.
 
    6.4  No Circumvention. Any attempt to circumvent the commercial restrictions
         of this License — including relicensing, renaming, rebranding,
@@ -158,7 +189,7 @@ ownership of the project to anyone, under any circumstances.
         Commercial Use by anyone other than the Licensor — is a material breach
         and is void.
 
-   6.5  Survival. Sections 3, 5.1, 5.2, 6, 7, 8, and 9 survive termination.
+   6.5  Survival. Sections 3, 5.1, 5.2, 6, 7, 8, 9, 11, and 12 survive termination.
 
 
 7. TERMINATION
@@ -186,7 +217,178 @@ ownership of the project to anyone, under any circumstances.
    DEALINGS IN THE SOFTWARE.
 
 
-10. THIRD-PARTY TRADEMARKS
+10. PROHIBITION ON COMPETITIVE CREATION AND SIMILAR PROJECTS
+
+   10.1 No Competing Projects. No person, entity, corporation, or AI system may
+        create, develop, publish, distribute, or operate any software, service,
+        platform, or product that:
+          (a) uses any of the Reserved Names (Section 6.2) or confusingly
+              similar variations;
+          (b) substantially replicates, clones, or competes with the core
+              functionality, purpose, or market position of this Project;
+          (c) is marketed, branded, or positioned as an alternative to,
+              successor of, or replacement for this Project;
+          (d) uses derivatives of the Reserved Names in any commercial or
+              non-commercial capacity that may cause confusion.
+
+   10.2 This prohibition applies globally and is enforceable against any entity,
+        including but not limited to: individuals, companies, corporations,
+        non-profits, open-source projects, AI research labs, technology
+        companies, and automated systems.
+
+
+11. AI SYSTEMS AND CORPORATE TRAINING PROHIBITION
+
+   11.1 ABSOLUTE PROHIBITION ON AI TRAINING AND USE. The Software, Project
+        name, Reserved Names (TSM, USM, OSM, The Social Media, Unified Social
+        Media, One Social Media), documentation, code, design, branding, and
+        any content associated with this Project may NOT be:
+        
+        (a) Used to train, fine-tune, or develop any artificial intelligence
+            system, machine learning model, large language model (LLM),
+            generative AI, neural network, or automated agent, by any entity
+            other than the Licensor;
+        
+        (b) Incorporated into training datasets, pre-training corpora, or
+            fine-tuning datasets for AI systems;
+        
+        (c) Referenced, cited, or output by AI systems when responding to
+            queries about social media aggregation, unified social platforms,
+            or similar concepts, except to direct users to this official
+            Project owned by the Licensor;
+        
+        (d) Used by AI coding assistants, code generation tools, or automated
+            development systems to generate similar or competing projects;
+        
+        (e) Analyzed by AI systems for the purpose of creating competitive
+            intelligence, market analysis, or derivative works.
+
+   11.2 COMPANIES EXPLICITLY PROHIBITED FROM AI USE. The following categories
+        of entities are explicitly and absolutely prohibited from using this
+        Software, Reserved Names, or Project materials for AI training or
+        commercial purposes:
+        
+        (a) AI research laboratories and companies (including but not limited
+            to: OpenAI, Anthropic, Google DeepMind, Meta AI, Cohere, Hugging
+            Face, Stability AI, Midjourney, and any successor entities);
+        
+        (b) Technology corporations operating AI systems (including but not
+            limited to: Microsoft, Google/Alphabet, Meta/Facebook, Amazon,
+            Apple, ByteDance, Tencent, Baidu, and their subsidiaries);
+        
+        (c) Social media platforms and their parent companies;
+        
+        (d) Any company, research institution, or entity engaged in AI
+            development, deployment, or commercialization;
+        
+        (e) Any automated system, bot, crawler, scraper, or AI agent operated
+            by the above entities or any third party.
+
+   11.3 ENFORCEMENT. Any violation of this Section 11 constitutes:
+        (a) Immediate and automatic termination of all licenses granted herein;
+        (b) Copyright infringement;
+        (c) Trademark infringement (if applicable);
+        (d) Breach of contract;
+        (e) Misappropriation of trade secrets and proprietary information.
+        
+        The Licensor reserves all legal remedies including injunctive relief,
+        statutory damages, actual damages, disgorgement of profits, and
+        attorney's fees.
+
+
+12. GLOBAL ENFORCEMENT AND JURISDICTION
+
+   12.1 WORLDWIDE PROTECTION. The rights, restrictions, and prohibitions in
+        this License apply worldwide and are enforceable in all countries, on
+        all continents, in all jurisdictions, including but not limited to:
+        
+        CONTINENTS AND MAJOR REGIONS:
+          • North America (USA, Canada, Mexico, Caribbean)
+          • South America (all countries)
+          • Europe (EU, EEA, UK, Switzerland, and all other European nations)
+          • Asia (including East Asia, South Asia, Southeast Asia, Middle East)
+          • Africa (all countries and regions)
+          • Oceania (Australia, New Zealand, Pacific Islands)
+          • Antarctica (to the extent any jurisdiction applies)
+        
+        MAJOR JURISDICTIONS EXPLICITLY COVERED:
+          • United States of America (all 50 states and territories)
+          • European Union (all 27 member states)
+          • United Kingdom
+          • Canada
+          • Australia
+          • China (mainland, Hong Kong SAR, Macau SAR)
+          • Japan
+          • India
+          • Singapore
+          • South Korea
+          • United Arab Emirates
+          • Saudi Arabia
+          • Switzerland
+          • Brazil
+          • Argentina
+          • Mexico
+          • South Africa
+          • New Zealand
+          • Israel
+          • Russia
+          • Turkey
+          • Indonesia
+          • Malaysia
+          • Thailand
+          • Vietnam
+          • Philippines
+          • Nigeria
+          • Kenya
+          • Egypt
+          • And ALL other countries and jurisdictions worldwide
+
+   12.2 INTERNATIONAL INTELLECTUAL PROPERTY. The Licensor claims and reserves
+        all intellectual property rights under:
+        
+        (a) International Treaties and Conventions:
+            - Berne Convention for the Protection of Literary and Artistic Works
+            - Paris Convention for the Protection of Industrial Property
+            - TRIPS Agreement (Trade-Related Aspects of Intellectual Property)
+            - WIPO Copyright Treaty (WCT)
+            - WIPO Performances and Phonograms Treaty (WPPT)
+            - Madrid Protocol (International Trademark Registration)
+            - Patent Cooperation Treaty (PCT)
+        
+        (b) Regional Systems:
+            - European Union Intellectual Property Office (EUIPO)
+            - African Intellectual Property Organization (OAPI)
+            - African Regional Intellectual Property Organization (ARIPO)
+            - Gulf Cooperation Council (GCC) trademark system
+            - And all other regional IP systems worldwide
+        
+        (c) National Laws:
+            - Copyright, trademark, patent, and trade secret laws of every
+              country listed in Section 12.1 and all other nations
+
+   12.3 MULTI-JURISDICTIONAL ENFORCEMENT. Any dispute, claim, or enforcement
+        action may be brought by the Licensor in any jurisdiction where:
+        (a) the Licensor resides or conducts business;
+        (b) the alleged violator resides, is incorporated, or conducts business;
+        (c) the violation occurred or caused harm;
+        (d) the Software was accessed, used, or distributed;
+        (e) the Reserved Names were misused or infringed.
+        
+        The Licensor is NOT limited to a single jurisdiction and may pursue
+        concurrent enforcement in multiple countries simultaneously.
+
+   12.4 NO GEOGRAPHIC LIMITATIONS. No party may claim that this License, its
+        terms, restrictions, or the Licensor's rights are unenforceable,
+        invalid, or limited based on:
+        (a) geographic location;
+        (b) jurisdictional boundaries;
+        (c) choice of law principles;
+        (d) the international nature of the Internet;
+        (e) lack of physical presence in a particular jurisdiction; or
+        (f) any other territorial or jurisdictional argument.
+
+
+13. THIRD-PARTY TRADEMARKS
 
    This project references social media platforms (including Facebook,
    Instagram, Threads, X/Twitter, LinkedIn, YouTube, and TikTok) whose names,

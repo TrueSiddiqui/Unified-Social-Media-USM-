@@ -1,5 +1,5 @@
 Unified Social Media (USM) — Source-Available Non-Commercial License
-Version 1.1
+Version 1.2
 
 Copyright (c) 2026 TrueSiddiqui. All rights reserved.
 
@@ -93,9 +93,10 @@ ownership of the project to anyone, under any circumstances.
    (c) You may not sublicense the Software in any manner that grants Commercial
        Use rights to any party.
 
-   (d) You may not use the Project name, "USM", "Unified Social Media", or the
-       Licensor's name or branding to imply endorsement of, or ownership over,
-       any Derivative Work.
+   (d) You may not use the Project name, "USM", "Unified Social Media", "OSM",
+       "One Social Media", "TSM", "The Social Media", or the Licensor's name
+       or branding to imply endorsement of, or ownership over, any Derivative
+       Work.
 
 
 5. CONTRIBUTIONS AND CONTRIBUTOR COMPENSATION
@@ -134,20 +135,30 @@ ownership of the project to anyone, under any circumstances.
         shall be construed to grant that party ownership of, or any commercial
         or proprietary claim to, the Software or the Project.
 
-   6.2  No Adverse Claims. You shall not claim ownership of the Project, register
-        or attempt to register any copyright, trademark, patent, domain, company,
-        or other right in the Project name or Software in a way that competes
-        with, impairs, or misappropriates the Licensor's rights. Any right so
-        acquired is held in trust for and must be assigned to the Licensor on
-        demand.
+   6.2  Reserved Names. The following names, acronyms, and any confusingly
+        similar variations are exclusively reserved by the Licensor and may not
+        be used, registered, or claimed by anyone other than the Licensor:
+          - "Unified Social Media" and "USM"
+          - "One Social Media" and "OSM"
+          - "The Social Media" and "TSM"
+        These names may not be used as, or incorporated into, any product name,
+        service name, company name, domain, trademark, trade name, or branding
+        by anyone other than the Licensor.
 
-   6.3  No Circumvention. Any attempt to circumvent the commercial restrictions
+   6.3  No Adverse Claims. You shall not claim ownership of the Project, register
+        or attempt to register any copyright, trademark, patent, domain, company,
+        or other right in the Project name, the Reserved Names (Section 6.2), or
+        Software in a way that competes with, impairs, or misappropriates the
+        Licensor's rights. Any right so acquired is held in trust for and must
+        be assigned to the Licensor on demand.
+
+   6.4  No Circumvention. Any attempt to circumvent the commercial restrictions
         of this License — including relicensing, renaming, rebranding,
         re-implementing, wrapping, or splitting the Software to enable
         Commercial Use by anyone other than the Licensor — is a material breach
         and is void.
 
-   6.4  Survival. Sections 3, 5.1, 5.2, 6, 7, 8, and 9 survive termination.
+   6.5  Survival. Sections 3, 5.1, 5.2, 6, 7, 8, and 9 survive termination.
 
 
 7. TERMINATION

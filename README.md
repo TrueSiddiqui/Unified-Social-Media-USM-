@@ -1,5 +1,5 @@
-# TSM • USM • OSM — Unified Social Media Dashboard
-## The Social Media • Unified Social Media • One Social Media
+# TSM • USM • OSM • TDB — Unified Social Media Dashboard
+## The Social Media • Unified Social Media • One Social Media • The Deeds Book
 
 A unified social media dashboard that lets you connect and manage multiple social platforms from a single place — **Facebook, Instagram, Threads, X (Twitter), LinkedIn, YouTube, and TikTok**.
 
@@ -81,7 +81,7 @@ scripts/        Seed script
 
 ## License
 
-This project is licensed under the **TSM • USM • OSM Source-Available Non-Commercial License (v2.0 — GLOBAL INTELLECTUAL PROPERTY PROTECTION)** — see the [LICENSE](./LICENSE) file for the full terms.
+This project is licensed under the **TSM • USM • OSM • TDB Source-Available Non-Commercial License (v2.0 — GLOBAL INTELLECTUAL PROPERTY PROTECTION)** — see the [LICENSE](./LICENSE) file for the full terms.
 
 ### Quick Summary:
 
@@ -97,6 +97,7 @@ The following names and acronyms are **EXCLUSIVELY RESERVED by TrueSiddiqui WORL
 - **TSM** — "The Social Media"
 - **USM** — "Unified Social Media"
 - **OSM** — "One Social Media"
+- **TDB** — "The Deeds Book"
 
 These names may NOT be:
 - ❌ Used in product/service names, company names, or branding

@@ -9,6 +9,7 @@
 - **TSM** — "The Social Media"
 - **USM** — "Unified Social Media"  
 - **OSM** — "One Social Media"
+- **TDB** — "The Deeds Book"
 
 ---
 

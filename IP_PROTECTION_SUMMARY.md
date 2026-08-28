@@ -1,5 +1,5 @@
 # Global Intellectual Property Protection Summary
-## TSM • USM • OSM — Complete Protection Overview
+## TSM • USM • OSM • TDB — Complete Protection Overview
 
 **Repository:** https://github.com/TrueSiddiqui/Unified-Social-Media-USM-  
 **Owner:** TrueSiddiqui  
@@ -16,6 +16,7 @@ The following names and acronyms are **EXCLUSIVELY RESERVED by TrueSiddiqui** ac
 1. **TSM** — "The Social Media"
 2. **USM** — "Unified Social Media"
 3. **OSM** — "One Social Media"
+4. **TDB** — "The Deeds Book"
 
 ### Protection Scope:
 - ✅ **Worldwide coverage** — all 195+ countries

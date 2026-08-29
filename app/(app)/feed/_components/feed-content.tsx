@@ -9,7 +9,7 @@ import { FeedItem } from '@/components/feed-item'
 import { Button } from '@/components/ui/button'
 import { Skeleton } from '@/components/ui/skeleton'
 import { getPlatform } from '@/lib/platforms'
-import { Rss, Link2, RefreshCw } from 'lucide-react'
+import { Rss, Link2, RefreshCw, Info } from 'lucide-react'
 import Link from 'next/link'
 
 interface FeedPost {
@@ -22,12 +22,19 @@ interface FeedPost {
   timestamp: string
   likes?: number
   comments?: number
+  permalink?: string | null
+}
+
+interface FeedNotice {
+  platform: string
+  message: string
 }
 
 export function FeedContent() {
   const { data: session, status } = useSession() || {}
   const router = useRouter()
   const [posts, setPosts] = useState<FeedPost[]>([])
+  const [notices, setNotices] = useState<FeedNotice[]>([])
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
 
@@ -45,6 +52,7 @@ export function FeedContent() {
       if (res.ok) {
         const data = await res.json()
         setPosts(data?.posts ?? [])
+        setNotices(data?.notices ?? [])
       } else {
         setError('Failed to load feed')
       }
@@ -84,6 +92,25 @@ export function FeedContent() {
           </Button>
         }
       />
+
+      {!loading && (notices?.length ?? 0) > 0 ? (
+        <div className="mt-6 space-y-2">
+          {notices.map((n: FeedNotice, i: number) => {
+            const p = getPlatform(n.platform)
+            return (
+              <div
+                key={`${n.platform}-${i}`}
+                className="flex items-start gap-2 rounded-lg border border-amber-200 bg-amber-50 px-3 py-2 text-xs text-amber-800 dark:border-amber-900/40 dark:bg-amber-950/30 dark:text-amber-300"
+              >
+                <Info className="mt-0.5 h-3.5 w-3.5 shrink-0" />
+                <span>
+                  <span className="font-medium">{p?.name ?? n.platform}:</span> {n.message}
+                </span>
+              </div>
+            )
+          })}
+        </div>
+      ) : null}
 
       <div className="mt-6 space-y-4">
         {loading ? (
@@ -127,6 +154,7 @@ export function FeedContent() {
                 timestamp={post.timestamp}
                 likes={post?.likes}
                 comments={post?.comments}
+                permalink={post?.permalink}
               />
             )
           })

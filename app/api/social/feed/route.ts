@@ -4,53 +4,71 @@ import { NextResponse } from 'next/server'
 import { getServerSession } from 'next-auth'
 import { authOptions } from '@/lib/auth'
 import { prisma } from '@/lib/db'
+import { isPlatformConfigured } from '@/lib/platforms'
+import { fetchFacebookFeed } from '@/lib/facebook'
 
-// This is a placeholder feed endpoint.
-// In production, each platform's API would be called with the stored tokens.
-// For now, it returns a message explaining that live feed data requires
-// valid API credentials and connected accounts.
+// The unified feed reads each connected platform LIVE using the stored,
+// encrypted access tokens. To respect user privacy, incoming posts are NOT
+// stored in our database and are NEVER written to Git — they are fetched on
+// demand and returned straight to the signed-in owner only.
 
 export async function GET() {
   try {
     const session = await getServerSession(authOptions)
-    if (!session?.user) {
-      return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
-    }
-    const userId = (session.user as any)?.id
+    const userId = (session?.user as any)?.id
     if (!userId) {
       return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
     }
 
     const connectedAccounts = await prisma.socialAccount.findMany({
       where: { userId },
-      select: {
-        platform: true,
-        profileName: true,
-        profileImage: true,
-      },
     })
 
     if ((connectedAccounts?.length ?? 0) === 0) {
-      return NextResponse.json({ posts: [] })
+      return NextResponse.json({ posts: [], notices: [] })
     }
 
-    // Generate placeholder posts to demonstrate the feed UI
-    // In production, these would be fetched from each platform's API
-    const posts = connectedAccounts.map((account: any, index: number) => ({
-      id: `placeholder-${account.platform}-${index}`,
-      platform: account.platform,
-      profileName: account.profileName ?? 'Unknown',
-      profileImage: account.profileImage,
-      content: `This is a placeholder post from your ${account.platform} account. Once the platform API credentials are configured, real posts from your feed will appear here.`,
-      imageUrl: null,
-      timestamp: new Date().toISOString(),
-      likes: 0,
-      comments: 0,
-    }))
+    const posts: any[] = []
+    const notices: { platform: string; message: string }[] = []
 
-    return NextResponse.json({ posts })
+    for (const account of connectedAccounts as any[]) {
+      if (account.platform === 'facebook') {
+        if (!isPlatformConfigured('facebook')) {
+          notices.push({
+            platform: 'facebook',
+            message: 'Facebook is connected but API credentials are not configured yet.',
+          })
+          continue
+        }
+        try {
+          const fbPosts = await fetchFacebookFeed(
+            account.accessToken,
+            account.profileName ?? 'Facebook',
+            account.profileImage ?? null
+          )
+          posts.push(...fbPosts)
+        } catch (err: any) {
+          notices.push({
+            platform: 'facebook',
+            message: err?.message || 'Could not load Facebook posts.',
+          })
+        }
+      } else {
+        // Other platforms: live reading is being rolled out platform by platform.
+        notices.push({
+          platform: account.platform,
+          message: 'Live feed for this platform is coming soon.',
+        })
+      }
+    }
+
+    posts.sort(
+      (a, b) => new Date(b.timestamp).getTime() - new Date(a.timestamp).getTime()
+    )
+
+    return NextResponse.json({ posts, notices })
   } catch (error: any) {
-    console.error('Error fetching feed:', error)
+    console.error('Error fetching feed:', error?.message || error)
     return NextResponse.json({ error: 'Internal server error' }, { status: 500 })
   }
 }

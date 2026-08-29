@@ -16,12 +16,15 @@ model User {
   emailVerified  DateTime?
   image          String?
   hashedPassword String?
+  mainPlatform   String?
   createdAt      DateTime        @default(now())
   updatedAt      DateTime        @updatedAt
   accounts       Account[]
   sessions       Session[]
   socialAccounts SocialAccount[]
   oauthStates    OAuthState[]
+  composes       Compose[]
+  platformDrafts PlatformDraft[]
 }
 
 model Account {
@@ -76,6 +79,46 @@ model SocialAccount {
   user User @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   @@unique([userId, platform])
+  @@index([userId])
+  @@index([platform])
+}
+
+// A single authoring session: the user writes once, then it is adapted per platform.
+// Only the user's own draft content lives here. Nothing here is ever committed to Git.
+model Compose {
+  id            String          @id @default(cuid())
+  userId        String
+  sourceContent String          @db.Text
+  createdAt     DateTime        @default(now())
+  updatedAt     DateTime        @updatedAt
+
+  user   User            @relation(fields: [userId], references: [id], onDelete: Cascade)
+  drafts PlatformDraft[]
+
+  @@index([userId])
+}
+
+// The per-platform version of a Compose. `aiModified` records, transparently,
+// whether AI reshaped the text for that platform. Status tracks publishing.
+model PlatformDraft {
+  id              String    @id @default(cuid())
+  composeId       String
+  userId          String
+  platform        String
+  content         String    @db.Text
+  aiModified      Boolean   @default(false)
+  status          String    @default("draft") // draft | publishing | published | failed | skipped
+  publishedPostId String?
+  publishedUrl    String?
+  error           String?   @db.Text
+  publishedAt     DateTime?
+  createdAt       DateTime  @default(now())
+  updatedAt       DateTime  @updatedAt
+
+  compose Compose @relation(fields: [composeId], references: [id], onDelete: Cascade)
+  user    User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([composeId])
   @@index([userId])
   @@index([platform])
 }

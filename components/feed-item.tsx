@@ -3,7 +3,7 @@
 import { Card, CardContent } from '@/components/ui/card'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import { PlatformIcon } from '@/components/platform-icon'
-import { Heart, MessageCircle, Share2 } from 'lucide-react'
+import { Heart, MessageCircle, Share2, ExternalLink } from 'lucide-react'
 import { SafeDate } from '@/components/safe-format'
 import { type LucideIcon } from 'lucide-react'
 import Image from 'next/image'
@@ -19,6 +19,7 @@ interface FeedItemProps {
   timestamp: string
   likes?: number
   comments?: number
+  permalink?: string | null
 }
 
 export function FeedItem({
@@ -32,6 +33,7 @@ export function FeedItem({
   timestamp,
   likes,
   comments,
+  permalink,
 }: FeedItemProps) {
   return (
     <Card variant="interactive" className="overflow-hidden">
@@ -98,6 +100,16 @@ export function FeedItem({
               >
                 <Share2 className="h-3.5 w-3.5" /> Share
               </button>
+              {permalink ? (
+                <a
+                  href={permalink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="ml-auto flex items-center gap-1.5 text-xs hover:text-foreground transition-colors"
+                >
+                  <ExternalLink className="h-3.5 w-3.5" /> View original
+                </a>
+              ) : null}
             </div>
           </div>
         </div>

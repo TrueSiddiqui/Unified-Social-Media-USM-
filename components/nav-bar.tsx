@@ -6,12 +6,13 @@ import { useSession, signOut } from 'next-auth/react'
 import { cn } from '@/lib/utils'
 import { Button } from '@/components/ui/button'
 import { ThemeToggle } from '@/components/theme-toggle'
-import { Rss, LayoutDashboard, Settings, LogOut, Menu, X, Zap } from 'lucide-react'
+import { Rss, LayoutDashboard, Settings, LogOut, Menu, X, Zap, PenSquare } from 'lucide-react'
 import { useState } from 'react'
 
 const navItems = [
   { href: '/dashboard', label: 'Dashboard', icon: LayoutDashboard },
   { href: '/feed', label: 'Feed', icon: Rss },
+  { href: '/compose', label: 'Compose', icon: PenSquare },
   { href: '/settings', label: 'Settings', icon: Settings },
 ]
 

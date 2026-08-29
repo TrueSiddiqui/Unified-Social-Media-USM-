@@ -102,9 +102,11 @@ async function fetchProfile(
     let headers: Record<string, string> = {}
 
     switch (platformId) {
-      case 'facebook':
-        url = `https://i.ytimg.com/vi/dQI3Hho5EGE/maxresdefault.jpg`
+      case 'facebook': {
+        const fbBase = 'https://graph.facebook.com/v19.0/me'
+        url = `${fbBase}?fields=id,name,picture.type(large)&access_token=${encodeURIComponent(accessToken)}`
         break
+      }
       case 'instagram':
         url = `https://graph.instagram.com/me?fields=id,username&access_token=${accessToken}`
         break

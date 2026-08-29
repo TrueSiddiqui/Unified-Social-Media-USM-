@@ -11,7 +11,14 @@ import { Badge } from '@/components/ui/badge'
 import { PlatformIcon } from '@/components/platform-icon'
 import { PLATFORMS } from '@/lib/platforms'
 import { Skeleton } from '@/components/ui/skeleton'
-import { Unlink, Check, Loader2, User, Shield } from 'lucide-react'
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from '@/components/ui/select'
+import { Unlink, Check, Loader2, User, Shield, Star } from 'lucide-react'
 import { toast } from 'sonner'
 
 interface AccountInfo {
@@ -27,6 +34,8 @@ export function SettingsContent() {
   const [accounts, setAccounts] = useState<AccountInfo[]>([])
   const [loading, setLoading] = useState(true)
   const [disconnecting, setDisconnecting] = useState<string | null>(null)
+  const [mainPlatform, setMainPlatform] = useState<string>('')
+  const [savingMain, setSavingMain] = useState(false)
 
   useEffect(() => {
     if (status === 'unauthenticated') {
@@ -48,11 +57,46 @@ export function SettingsContent() {
     }
   }, [])
 
+  const fetchMainPlatform = useCallback(async () => {
+    try {
+      const res = await fetch('/api/user/main-platform')
+      if (res.ok) {
+        const data = await res.json()
+        setMainPlatform(data?.mainPlatform ?? '')
+      }
+    } catch (err) {
+      console.error('Failed to fetch main platform:', err)
+    }
+  }, [])
+
   useEffect(() => {
     if (status === 'authenticated') {
       fetchAccounts()
+      fetchMainPlatform()
     }
-  }, [status, fetchAccounts])
+  }, [status, fetchAccounts, fetchMainPlatform])
+
+  const handleMainPlatformChange = async (platform: string) => {
+    const value = platform === 'none' ? '' : platform
+    setSavingMain(true)
+    try {
+      const res = await fetch('/api/user/main-platform', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ platform: value || null }),
+      })
+      if (res.ok) {
+        setMainPlatform(value)
+        toast.success('Main platform updated')
+      } else {
+        toast.error('Failed to update main platform')
+      }
+    } catch {
+      toast.error('Something went wrong')
+    } finally {
+      setSavingMain(false)
+    }
+  }
 
   const handleDisconnect = async (platform: string) => {
     setDisconnecting(platform)
@@ -110,6 +154,41 @@ export function SettingsContent() {
                 </span>
               </div>
             </div>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle className="flex items-center gap-2 text-base">
+              <Star className="h-4 w-4" /> Main Platform
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p className="mb-3 text-sm text-muted-foreground">
+              Choose your primary platform. It&apos;s highlighted across your dashboard and pre-selected when you compose.
+            </p>
+            <Select
+              value={mainPlatform || 'none'}
+              onValueChange={handleMainPlatformChange}
+              disabled={savingMain}
+            >
+              <SelectTrigger className="w-full sm:w-72">
+                <SelectValue placeholder="Select a main platform" />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="none">No preference</SelectItem>
+                {PLATFORMS.map((p) => (
+                  <SelectItem key={p.id} value={p.id}>
+                    {p.name}
+                  </SelectItem>
+                ))}
+              </SelectContent>
+            </Select>
+            {savingMain ? (
+              <p className="mt-2 flex items-center gap-2 text-xs text-muted-foreground">
+                <Loader2 className="h-3 w-3 animate-spin" /> Saving…
+              </p>
+            ) : null}
           </CardContent>
         </Card>
 

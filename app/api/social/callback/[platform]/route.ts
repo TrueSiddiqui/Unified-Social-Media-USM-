@@ -161,6 +161,33 @@ async function fetchProfile(
   }
 }
 
+/**
+ * Facebook short-lived user tokens last ~1-2 hours. Exchange for a long-lived
+ * token (~60 days) so the connection keeps working. Falls back to the
+ * short-lived token if the exchange fails.
+ */
+async function exchangeForLongLivedFacebookToken(
+  shortLivedToken: string
+): Promise<{ access_token: string; expires_in?: number }> {
+  try {
+    const clientId = process.env.FACEBOOK_APP_ID ?? ''
+    const clientSecret = process.env.FACEBOOK_APP_SECRET ?? ''
+    const url =
+      `https://graph.facebook.com/v19.0/oauth/access_token?grant_type=fb_exchange_token` +
+      `&client_id=${clientId}&client_secret=${clientSecret}` +
+      `&fb_exchange_token=${encodeURIComponent(shortLivedToken)}`
+    const res = await fetch(url)
+    const data = await res.json()
+    if (res.ok && data?.access_token) {
+      return { access_token: data.access_token, expires_in: data?.expires_in }
+    }
+    console.error('Facebook long-lived token exchange failed:', data)
+  } catch (err) {
+    console.error('Facebook long-lived token exchange error:', err)
+  }
+  return { access_token: shortLivedToken }
+}
+
 export async function GET(
   req: NextRequest,
   { params }: { params: { platform: string } }
@@ -215,6 +242,13 @@ export async function GET(
 
     if (!tokenData) {
       return NextResponse.redirect(new URL('/dashboard?error=token_exchange_failed', req.url))
+    }
+
+    // Facebook: upgrade the short-lived token to a long-lived one (~60 days)
+    if (platformId === 'facebook') {
+      const longLived = await exchangeForLongLivedFacebookToken(tokenData.access_token)
+      tokenData.access_token = longLived.access_token
+      tokenData.expires_in = longLived.expires_in ?? tokenData.expires_in
     }
 
     // Fetch profile

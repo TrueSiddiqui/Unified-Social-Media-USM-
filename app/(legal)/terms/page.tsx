@@ -79,6 +79,57 @@ export default function TermsPage() {
             <li>Violate the Terms of Service or API policies of any connected social media platform</li>
             <li>Spam, phish, or distribute malware</li>
           </ul>
+
+          <h3>4.1 Prohibition of Unauthorized Automated Access</h3>
+          <p>
+            You are strictly prohibited from accessing, or attempting to access, any part of the Service through any
+            automated, non-human, or programmatic means that has not been expressly authorized in writing by TrueSiddiqui.
+            This prohibition includes, without limitation, the use of any:
+          </p>
+          <ul>
+            <li>bot, robot, crawler, spider, or web indexing agent;</li>
+            <li>automated script, macro, headless browser, or scheduled task;</li>
+            <li>artificial or automated query, request, or interaction generator; or</li>
+            <li>any other device, process, or method designed to access, monitor, or interact with the Service
+            without direct, contemporaneous human control.</li>
+          </ul>
+          <p>
+            Only genuine, human-initiated access through the official user interface or through interfaces expressly
+            made available and authorized by TrueSiddiqui is permitted. Any automated access not so authorized
+            constitutes a material breach of these Terms and unauthorized access to a protected computer system.
+          </p>
+
+          <h3>4.2 Prohibition of Third-Party Scripts, Bots, and Interfacing Tools</h3>
+          <p>
+            You are strictly prohibited from using, deploying, distributing, or facilitating any third-party script,
+            tool, software, extension, plug-in, application, service, or code that interfaces or interacts with,
+            connects to, wraps, mimics, emulates, reproduces, resells, or otherwise builds upon the Service or any
+            portion of it, without the prior express written permission of TrueSiddiqui. This includes, without
+            limitation, any software that:
+          </p>
+          <ul>
+            <li>automates, replicates, or simulates user actions or the functionality of the Service;</li>
+            <li>acts as a proxy, wrapper, middleware, or intermediary layer between you (or any third party) and the Service;</li>
+            <li>presents, re-brands, or redistributes the Service, its features, or its data under any other name or product; or</li>
+            <li>connects to any non-public or undocumented endpoint, or otherwise interfaces with the Service in a
+            manner not expressly authorized.</li>
+          </ul>
+
+          <h3>4.3 Prohibition of Scraping and Data Harvesting</h3>
+          <p>
+            You are strictly prohibited from scraping, harvesting, extracting, collecting, aggregating, copying,
+            caching, storing, reproducing, or otherwise acquiring any data, content, code, or information from the
+            Service — whether by manual or automated means — without the prior explicit written permission of
+            TrueSiddiqui. This prohibition applies to all Service data, including but not limited to user data,
+            posts, metadata, analytics, media, and any material displayed by or transmitted through the Service.
+          </p>
+          <p>
+            No portion of the Service or its data may be retained, republished, redistributed, sold, licensed, or
+            used to create, train, or improve any product, dataset, model, or service without such prior written
+            permission. TrueSiddiqui reserves all rights and remedies available at law and in equity for any
+            violation of the foregoing prohibitions, including suspension or termination of access, injunctive
+            relief, and claims for damages.
+          </p>
         </section>
 
         <section>
